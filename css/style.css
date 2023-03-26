@@ -1419,6 +1419,9 @@ transition: width .4s;
 .intro-section-content__number:hover::after {
 	width: 100%;
 }
+.intro-section-content__number:hover {
+	color: #98ce87;
+}
 .intro-section-content__excerpt-website {
 	font-size: 24px;
   line-height: 32px;
