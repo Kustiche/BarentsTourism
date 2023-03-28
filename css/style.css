@@ -1422,12 +1422,33 @@ transition: width .4s;
 .intro-section-content__number:hover {
 	color: #98ce87;
 }
-.intro-section-content__excerpt-website {
+.intro-section-content__mail {
 	font-size: 24px;
   line-height: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #98ce87;
+	position: relative;
+}
+.intro-section-content__mail::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	border-top: 2px solid #98ce87;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: width .4s;
+}
+.intro-section-content__mail-link {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 510px;
+	width: 100%;
+}
+.intro-section-content__mail-link:hover .intro-section-content__mail::after {
+	width: 100%;
 }
 @media screen and (max-width: 1499px) {
 	.intro-section-content__img {
@@ -1476,6 +1497,13 @@ transition: width .4s;
 	}
 }
 @media screen and (max-width: 1199px) {
+	.intro-section-content__mail-link {
+		max-width: 370px;
+	}
+	.intro-section-content__mail {
+		font-size: 20px;
+    line-height: 26px;
+	}
 	.intro-section-content__img {
 		width: 140px;
 		height: 140px;
@@ -1530,6 +1558,13 @@ transition: width .4s;
 	}
 }
 @media screen and (max-width: 900px) {
+	.intro-section-content__mail-link {
+		max-width: 320px;
+	}
+	.intro-section-content__mail {
+		font-size: 17px;
+    line-height: 21px;
+	}
 	.intro-section-content__img {
 		width: 100px;
 		height: 100px;
@@ -1580,6 +1615,17 @@ transition: width .4s;
 	}
 }
 @media screen and (max-width: 700px) {
+	.intro-section-content__icon--mail {
+		width: 30px;
+		height: 30px;
+	}
+	.intro-section-content__mail-link {
+		max-width: 320px;
+	}
+	.intro-section-content__mail {
+		font-size: 14px;
+    line-height: 21px;
+	}
 	.intro-section-content {
 		padding-top: 160px;
 	}
@@ -1647,35 +1693,35 @@ transition: width .4s;
 		padding-top: 60px;
 	}
 	.intro-section-content__img--1 {
-		top: 45%;
+		top: 39%;
     left: 1%;
 	}
 	.intro-section-content__img--2 {
-		top: 24%;
+		top: 18%;
 		left: 1%;
 	}
 	.intro-section-content__img--4 {
-		top: 3%;
+		top: -3%;
 		left: 4%;
 	}
 	.intro-section-content__img--5 {
-		top: -5%;
+		top: -11%;
     left: 27%;
 	}
 	.intro-section-content__img--6 {
-		top: -5%;
+		top: -11%;
 		left: 50%;
 	}
 	.intro-section-content__img--7 {
-		top: 3%;
+		top: -3%;
 		left: 73%;
 	}
 	.intro-section-content__img--9 {
-		top: 24%;
+		top: 18%;
 		left: 78%;
 	}
 	.intro-section-content__img--10 {
-		top: 45%;
+		top: 39%;
 		left: 78%;
 	}
 	.intro-section-content__title {
